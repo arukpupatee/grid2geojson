@@ -28,7 +28,7 @@ exports.toGeoJSON = (lats, lons, data, padding=true) => {
                         [lat2, lon2]
                     ]]
                 };
-                arr.append(feature);
+                arr.push(feature);
             }
         }
     } else {
@@ -49,7 +49,7 @@ exports.toGeoJSON = (lats, lons, data, padding=true) => {
                         [lat2, lon2]
                     ]]
                 };
-                arr.append(feature);
+                arr.push(feature);
             }
         }
     }
