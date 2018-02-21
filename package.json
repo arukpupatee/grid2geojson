@@ -1,0 +1,29 @@
+{
+  "name": "grid2geojson",
+  "version": "1.0.0",
+  "description": "Node.js package for convert 2D array grid data to GeoJSON format",
+  "main": "src/grid2geojson.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "start": "node example/basic_example.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arukpupatee/grid2geojson.git"
+  },
+  "keywords": [
+    "grid",
+    "geojson",
+    "netcdf4",
+    "climate"
+  ],
+  "author": "Aruk Pupatee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arukpupatee/grid2geojson/issues"
+  },
+  "homepage": "https://github.com/arukpupatee/grid2geojson#readme"
+}
