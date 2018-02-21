@@ -53,4 +53,5 @@ exports.toGeoJSON = (lats, lons, data, padding=true) => {
             }
         }
     }
+    return arr;
 };
