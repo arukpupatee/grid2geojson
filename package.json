@@ -1,6 +1,6 @@
 {
   "name": "grid2geojson",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Node.js package for convert 2D array grid data to GeoJSON format",
   "main": "src/grid2geojson.js",
   "directories": {
