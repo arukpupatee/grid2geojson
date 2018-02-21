@@ -1,6 +1,8 @@
 # grid2geojson
 Node.js package for convert 2D array grid data to GeoJSON format
 
+See source code on [Github](https://github.com/arukpupatee/grid2geojson)
+
 ## Installing
 
 In Node.js. Install by npm command
@@ -27,6 +29,7 @@ data = [[value at lat1lon1, value at lat1lon2, value at lat1lon3, value at lat1l
         [value at lat3lon1, value at lat3lon2, value at lat3lon3, value at lat3lon4],
         [value at lat4lon1, value at lat4lon2, value at lat4lon3, value at lat4lon4]]
 ```
+
 
 And then use function
 
