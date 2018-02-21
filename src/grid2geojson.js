@@ -22,10 +22,10 @@ exports.toGeoJSON = (lats, lons, data, padding=true) => {
                 feature.geometry = {
                     "type": "Polygon",
                     "coordinates": [[
-                        [lat1, lon1],
-                        [lat1, lon2],
-                        [lat2, lon1],
-                        [lat2, lon2]
+                        [lon1, lat1],
+                        [lon2, lat1],
+                        [lon2, lat2],
+                        [lon1, lat2]
                     ]]
                 };
                 arr.push(feature);
@@ -53,10 +53,5 @@ exports.toGeoJSON = (lats, lons, data, padding=true) => {
             }
         }
     }
-
-    var featureCollection = {
-        "type": "FeatureCollection",
-        "feature": arr
-    };
-    return featureCollection;
+    return arr;
 };
