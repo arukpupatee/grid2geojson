@@ -17,7 +17,7 @@ exports.toGeoJSON = (lats, lons, data, padding=true) => {
                 } else {
                     lon2 = lons[latIdx] + (lons[latIdx] - lons[latIdx-1]); 
                 }
-                let feature = { type: "Feature" };
+                let feature = { "type": "Feature" };
                 feature.properties = { value: data[latIdx][lonIdx] };
                 feature.geometry = {
                     "type": "Polygon",
@@ -38,7 +38,7 @@ exports.toGeoJSON = (lats, lons, data, padding=true) => {
                 let lon1 = lons[lonIdx];
                 let lat2 = lats[latIdx+1];
                 let lon2 = lons[latIdx+1];
-                let feature = { type: "Feature" };
+                let feature = { "type": "Feature" };
                 feature.properties = { value: data[latIdx][lonIdx] };
                 feature.geometry = {
                     "type": "Polygon",
@@ -53,5 +53,10 @@ exports.toGeoJSON = (lats, lons, data, padding=true) => {
             }
         }
     }
-    return arr;
+
+    var featureCollection = {
+        "type": "FeatureCollection",
+        "feature": arr
+    };
+    return featureCollection;
 };
