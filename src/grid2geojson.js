@@ -17,6 +17,12 @@ exports.toGeoJSON = (lats, lons, data, padding=true) => {
                 } else {
                     lon2 = lons[latIdx] + (lons[latIdx] - lons[latIdx-1]); 
                 }
+
+                lat1 = lat1.toFixed(4);
+                lat2 = lat2.toFixed(4);
+                lon1 = lon1.toFixed(4);
+                lon2 = lon2.toFixed(4);
+
                 let feature = { "type": "Feature" };
                 feature.properties = { value: data[latIdx][lonIdx] };
                 feature.geometry = {
@@ -38,6 +44,12 @@ exports.toGeoJSON = (lats, lons, data, padding=true) => {
                 let lon1 = lons[lonIdx];
                 let lat2 = lats[latIdx+1];
                 let lon2 = lons[latIdx+1];
+
+                lat1 = lat1.toFixed(4);
+                lat2 = lat2.toFixed(4);
+                lon1 = lon1.toFixed(4);
+                lon2 = lon2.toFixed(4);
+                
                 let feature = { "type": "Feature" };
                 feature.properties = { value: data[latIdx][lonIdx] };
                 feature.geometry = {
