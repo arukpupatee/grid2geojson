@@ -18,10 +18,10 @@ exports.toGeoJSON = (lats, lons, data, padding=true) => {
                     lon2 = lons[latIdx] + (lons[latIdx] - lons[latIdx-1]); 
                 }
 
-                lat1 = lat1.toFixed(4);
-                lat2 = lat2.toFixed(4);
-                lon1 = lon1.toFixed(4);
-                lon2 = lon2.toFixed(4);
+                lat1 = parseFloat(lat1.toFixed(4));
+                lat2 = parseFloat(lat2.toFixed(4));
+                lon1 = parseFloat(lon1.toFixed(4));
+                lon2 = parseFloat(lon2.toFixed(4));
 
                 let feature = { "type": "Feature" };
                 feature.properties = { value: data[latIdx][lonIdx] };
@@ -45,10 +45,10 @@ exports.toGeoJSON = (lats, lons, data, padding=true) => {
                 let lat2 = lats[latIdx+1];
                 let lon2 = lons[latIdx+1];
 
-                lat1 = lat1.toFixed(4);
-                lat2 = lat2.toFixed(4);
-                lon1 = lon1.toFixed(4);
-                lon2 = lon2.toFixed(4);
+                lat1 = parseFloat(lat1.toFixed(4));
+                lat2 = parseFloat(lat2.toFixed(4));
+                lon1 = parseFloat(lon1.toFixed(4));
+                lon2 = parseFloat(lon2.toFixed(4));
                 
                 let feature = { "type": "Feature" };
                 feature.properties = { value: data[latIdx][lonIdx] };
