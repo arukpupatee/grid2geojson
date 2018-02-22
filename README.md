@@ -50,10 +50,10 @@ feature at lat1lon1 = {
         "type": "Polygon",
         "coordinates": [
             [
-                [lat1, lon1],
-                [lat1, lon2],
-                [lat2, lon1],
-                [lat2, lon2]
+                [lon1, lat1],
+                [lon2, lat1],
+                [lon2, lat2],
+                [lon1, lat2]
             ]
         ]
     }
